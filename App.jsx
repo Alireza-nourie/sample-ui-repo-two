@@ -14,24 +14,24 @@ import Simulation from "./pages/Simulation";
 function App() {
   return (
     <HeroUIProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/sample-ui-repo-two">
         <Layout>
           <Routes>
-                  <Route path="/" element={<Landing />} />
-      <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="/network-configuration" element={<Networkconfiguration />} />
-      <Route path="/network-configuration/vehicles" element={<Vehicles />} />
-      <Route path="/simulation" element={<Simulation />} />
-      <Route path="/network-configuration/nodes" element={<LockedPage />} />
-      <Route path="/network-configuration/nodes/mines" element={<LockedPage />} />
-      <Route path="/network-configuration/nodes/mills" element={<LockedPage />} />
-      <Route path="/network-configuration/nodes/transloads" element={<LockedPage />} />
-      <Route path="/network-configuration/vehicles/locomotives" element={<LockedPage />} />
-      <Route path="/network-configuration/vehicles/trucks" element={<LockedPage />} />
-      <Route path="/network-configuration/vehicles/railcars" element={<LockedPage />} />
-      <Route path="/network-configuration/routes" element={<LockedPage />} />
-      <Route path="/simulation/planning-mode" element={<LockedPage />} />
-      <Route path="/simulation/production-mode" element={<LockedPage />} />
+            <Route path="/" element={<Landing />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/network-configuration" element={<Networkconfiguration />} />
+            <Route path="/network-configuration/vehicles" element={<Vehicles />} />
+            <Route path="/simulation" element={<Simulation />} />
+            <Route path="/network-configuration/nodes" element={<LockedPage />} />
+            <Route path="/network-configuration/nodes/mines" element={<LockedPage />} />
+            <Route path="/network-configuration/nodes/mills" element={<LockedPage />} />
+            <Route path="/network-configuration/nodes/transloads" element={<LockedPage />} />
+            <Route path="/network-configuration/vehicles/locomotives" element={<LockedPage />} />
+            <Route path="/network-configuration/vehicles/trucks" element={<LockedPage />} />
+            <Route path="/network-configuration/vehicles/railcars" element={<LockedPage />} />
+            <Route path="/network-configuration/routes" element={<LockedPage />} />
+            <Route path="/simulation/planning-mode" element={<LockedPage />} />
+            <Route path="/simulation/production-mode" element={<LockedPage />} />
           </Routes>
         </Layout>
       </BrowserRouter>
