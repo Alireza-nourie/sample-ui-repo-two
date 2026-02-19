@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-    base: '/eudaimotors-logistics-optimization-platf-8ec47b35ba8e94ba/',
+    base: '/sample-ui-repo-two/',
     plugins: [react(), tailwindcss()],
 });
