@@ -14,7 +14,7 @@ import Simulation from "./pages/Simulation";
 function App() {
   return (
     <HeroUIProvider>
-      <BrowserRouter basename="/sample-ui-repo-two">
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <Layout>
           <Routes>
             <Route path="/" element={<Landing />} />
